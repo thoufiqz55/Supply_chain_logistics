@@ -7,6 +7,8 @@ This project aims to develop a deep learning model that accurately predicts carb
 
 Additionally, the project provides a route suggestion mechanism that estimates emissions for new shipment scenarios, supporting more sustainable planning. The ultimate goal is to optimize logistics operations in a way that balances cost, efficiency, and environmental responsibility.
 
+## Dataset Description
+
 Dataset is divided into 7 tables, one table for all orders that needs to be assigned a route – OrderList table, and 6 additional files specifying the problem and restrictions. For instance, the FreightRates table describes all available couriers, the weight gaps for each individual lane and rates associated. The PlantPorts table describes the allowed links between the warehouses and shipping ports in real world. Furthermore, the ProductsPerPlant table lists all supported warehouse-product combinations. The VmiCustomers lists all special cases, where warehouse is only allowed to support specific customer, while any other non-listed warehouse can supply any customer. Moreover, the WhCapacities lists warehouse capacities measured in number of orders per day and the WhCosts specifies the cost associated in storing the products in given warehouse measured in dollars per unit.
 
 Order ID is ID of the order made by the customer, product ID is the specific product ID customer ordered.
